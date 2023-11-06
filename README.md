@@ -9,47 +9,47 @@ If you are unable to successfully receive responses from the endpoints, mocking 
 
 getAllEmployees()
 
-    output - list of employees
-    description - this should return all employees
+    output - list of employeeDtos
+    description - this should return all employeeDtos
 
 getEmployeesByNameSearch()
 
-    output - list of employees
-    description - this should return all employees whose name contains or matches the string input provided
+    output - list of employeeDtos
+    description - this should return all employeeDtos whose name contains or matches the string input provided
 
 getEmployeeById(string id)
 
-    output - employee
-    description - this should return a single employee
+    output - employeeDto
+    description - this should return a single employeeDto
 
 getHighestSalaryOfEmployees()
 
     output - integer of the highest salary
-    description -  this should return a single integer indicating the highest salary of all employees
+    description -  this should return a single integer indicating the highest salary of all employeeDtos
 
 getTop10HighestEarningEmployeeNames()
 
-    output - list of employees
-    description -  this should return a list of the top 10 employees based off of their salaries
+    output - list of employeeDtos
+    description -  this should return a list of the top 10 employeeDtos based off of their salaries
 
 createEmployee(string name, string salary, string age)
 
     output - string of the status (i.e. success)
-    description -  this should return a status of success or failed based on if an employee was created
+    description -  this should return a status of success or failed based on if an employeeDto was created
 
 deleteEmployee(String id)
 
-    output - the name of the employee that was deleted
-    description - this should delete the employee with specified id given
+    output - the name of the employeeDto that was deleted
+    description - this should delete the employeeDto with specified id given
 
 ### External endpoints from base url
 #### This section will outline all available endpoints and their request and response models from https://dummy.restapiexample.com
-/employees
+/employeeDtos
 
     request:
         method: GET
         parameters: n/a
-        full route: https://dummy.restapiexample.com/api/v1/employees
+        full route: https://dummy.restapiexample.com/api/v1/employeeDtos
     response:
         {
             "status": "success",
@@ -65,13 +65,13 @@ deleteEmployee(String id)
             ]
         }
 
-/employee/{id}
+/employeeDto/{id}
 
     request:
         method: GET
         parameters: 
             id (String)
-        full route: https://dummy.restapiexample.com/api/v1/employee/{id}
+        full route: https://dummy.restapiexample.com/api/v1/employeeDto/{id}
     response: 
         {
             "status": "success",

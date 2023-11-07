@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class EmployeeResponse {
     private String status;
-    private EmployeeDto data;
+    private EmployeeDataResponse data;
     private String message;
 }

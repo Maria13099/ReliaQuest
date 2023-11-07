@@ -1,16 +1,16 @@
 package com.example.rqchallenge.employees.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class EmployeeListResponse {
+public class DeleteResponse {
+    @JsonProperty("status")
     private String status;
-    private List<EmployeeDataResponse> data;
+    @JsonProperty("message")
     private String message;
 }
